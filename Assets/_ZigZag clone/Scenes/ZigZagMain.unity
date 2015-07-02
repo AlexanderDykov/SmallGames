@@ -367,7 +367,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11453864, guid: 3ba7982a9f5cd0f4dbf1e4060e5a77d0, type: 2}
       propertyPath: speed
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11453864, guid: 3ba7982a9f5cd0f4dbf1e4060e5a77d0, type: 2}
       propertyPath: score
@@ -505,19 +505,6 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 119218, guid: 3ba7982a9f5cd0f4dbf1e4060e5a77d0, type: 2}
   m_PrefabInternal: {fileID: 749669570}
---- !u!114 &1696367928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1696367927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c7a4c23d7e71214caa4fddef1244341, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: {fileID: 1909516342}
-  bestScore: {fileID: 1252499087}
 --- !u!114 &1696367929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -530,8 +517,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  score: {fileID: 1909516342}
-  bestScore: {fileID: 1252499087}
 --- !u!65 &1696367933
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -544,6 +529,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1, z: 1.5}
   m_Center: {x: 0, y: -.119999997, z: 0}
+--- !u!114 &1696367936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1696367927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d45f2fdad9d493f43a3cca586d1b1c33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 1909516342}
+  bestScore: {fileID: 1252499087}
 --- !u!1 &1792514410 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 141146, guid: 016f0bc5a2c5e5b47ab0951c76921088, type: 2}

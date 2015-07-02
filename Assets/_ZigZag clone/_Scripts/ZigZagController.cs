@@ -1,15 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ZigZagController : MonoBehaviour {
 
     public float speed = 5f;
     Vector3 direction = Vector3.zero;
-
-	// Use this for initialization
-	void Start () {
-	
-	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -21,4 +17,6 @@ public class ZigZagController : MonoBehaviour {
         float temp = speed * Time.deltaTime;
         transform.Translate(direction * temp);
 	}
+
+   
 }
